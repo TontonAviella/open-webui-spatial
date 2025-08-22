@@ -88,6 +88,15 @@ export const currentChatPage = writable(1);
 export const isLastActiveTab = writable(true);
 export const playingNotificationSound = writable(false);
 
+// Spatial Analysis Stores for Agricultural Chat Interface
+export const spatialEnabled = writable(false);
+export const spatialMapCenter = writable({ lat: 40.7128, lng: -74.0060 });
+export const spatialMapZoom = writable(10);
+export const spatialFields = writable([]);
+export const spatialLayers = writable([]);
+export const spatialAnalysisResults = writable([]);
+export const showSpatialPanel = writable(false);
+
 export type Model = OpenAIModel | OllamaModel;
 
 type BaseModel = {
